@@ -1,62 +1,97 @@
-/* styles.css */
-
-.extra {
-    width: 1407px;
-    z-index: 99;
-    background-color: #333;
-}
-
 header {
-    width: 1407px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: (22, 22, 23, .8);    
+    color: white;
+
 }
 
-.translucent-header {
-    position: sticky;
-    top: 90px;
-    transition: top 0.3s;
-    width: 1361px;
-    height: 85px;
-    z-index: 100;
-    background-color: rgba(0,0,0,0.93); /* Translucent white background */
+.left {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
-    transition: top 0.3s;
+    justify-content: center; 
+    padding: 15px;
+    font-size: 25px;
+}
+
+.header-left-text {
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box{
+    width: 400px;
+    height: 38px;
+    padding-left: 15px;
+    font-size: 18px;
+    flex: 1;
+    border-width: 1px;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.search-button {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.search {
+    height: 42px;
+    width: 64px;
+    background-color: white;
+    color: white;
+    position: relative;
+    border-color: black;
+    border-width: 1px;
+    margin-left: -1px;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.search-img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    cursor: pointer;
     
 }
 
-.left-section h1 {
-    font-size: 24px;
-    margin: 0;
-    color: white;
+
+.right{
+    font-size: 20px;
 }
 
-.middle-section input {
-    border: none;
-    padding: 8px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 200px;
-}
-
-.right-section ul {
+.right ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.right-section li {
+.right li {
     display: inline-block;
     margin-right: 20px;
 }
 
-.right-section a {
+.right a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-
-
 
 
