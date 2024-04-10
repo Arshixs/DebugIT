@@ -1,0 +1,62 @@
+/* styles.css */
+
+.extra {
+    width: 1407px;
+    z-index: 99;
+    background-color: #333;
+}
+
+header {
+    width: 1407px;
+}
+
+.translucent-header {
+    position: sticky;
+    top: 90px;
+    transition: top 0.3s;
+    width: 1361px;
+    height: 85px;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.93); /* Translucent white background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: top 0.3s;
+    
+}
+
+.left-section h1 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+.middle-section input {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.right-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right-section li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.right-section a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
