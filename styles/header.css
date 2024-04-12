@@ -5,8 +5,8 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 90px;
-    background-color: (22, 22, 23, .8);    
     color: white;
+    background-color: rgb(49, 49, 49);
 
 }
 
