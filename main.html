@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="styles/body.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/community.css">
     </head>
     <body>
         <header>
@@ -424,19 +425,40 @@
             </div>
         </div>
 
+        <section class="community-section">
+            <h1>
+                Community!!!
+            </h1>
 
-        <script>
-            let prevScrollPos = window.pageYOffset;
-            window.onscroll = function() {
-                const currentScrollPos = window.pageYOffset;
-                if (prevScrollPos > currentScrollPos || currentScrollPos === 0 ) {
-                    document.querySelector("header").style.top = "0";
-                } else {
-                    document.querySelector("header").style.top = "-100px"; // Hide header
-                }
-                prevScrollPos = currentScrollPos;
-            };
-        </script>
+            <section class="top-anime-list">
+                <section class="side-list-name">
+                    <h2>Top airing Anime </h2>
+                </section>
+                <section class="side-main-list">
+                    <section class="series-num">1</section>
+                    <section class="content-list">
+                        <img src="img/community_list/top_airing/1.webp">
+                        <section class="content-list-text">
+                            <h2>One Piece</h2>
+                            <section>
+                                TV, 0 eps, scored 8.72<br>
+                                2,343,370 members
+                            </section>
+
+                        </section>
+
+                    </section>
+                    <section>
+                        <button class="add-button">
+                            add
+                        </button>
+                        
+                    </section>
+                </section>
+
+            </section>
+
+        </section>
 
         
     </body>
