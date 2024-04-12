@@ -1,7 +1,6 @@
-.community-section {
+.community-section{
   display: grid;
-  grid-template-columns: 3fr 1fr;
-
+  grid-template-columns: 2fr 1fr ;
 }
 
 .top-anime-list {
@@ -9,8 +8,8 @@
   border: solid;
   border-width: 2px;
   border-color: black;
+  margin-left: -1px;
 }
-
 
 .top-anime-list {
   display: flex;
@@ -76,3 +75,5 @@
 .top-airing-img {
   height: 80px;
 }
+
+
