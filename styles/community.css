@@ -1,7 +1,7 @@
 .community-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  height: 1000px;
+  grid-template-columns: 3fr 1fr;
+
 }
 
 .top-anime-list {
@@ -18,9 +18,15 @@
 
 }
 
-h2 {
+.anime-name-in-list {
+  margin-bottom: 5px;
   margin-top: 0;
   margin-bottom: 5px;
+  font-size: medium;
+}
+
+.anime-in-list-info {
+  font-size: small;
 }
 
 .side-list-name {
@@ -35,11 +41,12 @@ h2 {
   display: grid;
   grid-template-columns: 20px 1fr 40px;
   align-items: start;
-  justify-content:start;
+  justify-content:center;
   text-align:center;
   border: solid;
   margin-top: -1px;
   padding: 5px;
+  height: 80px;
 }
 
 .series-num {
@@ -53,7 +60,7 @@ h2 {
 
 .content-list-text {
   display: grid;
-  grid-template-rows: 30px 1fr;
+  grid-template-rows: 1fr 2fr;
   text-align: start;
   margin-left: 10px;
 }
@@ -64,4 +71,8 @@ h2 {
   width: 30px;
   text-align: center;
   padding: 2px;
+}
+
+.top-airing-img {
+  height: 80px;
 }
