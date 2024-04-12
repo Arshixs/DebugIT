@@ -1,11 +1,10 @@
 .community-section{
   display: grid;
-  grid-template-columns: 2fr 1fr ;
+  grid-template-columns: 3fr 1fr ;
 }
 
 .top-anime-list {
   padding: 20px;
-  border: solid;
   border-width: 2px;
   border-color: black;
   margin-left: -1px;
