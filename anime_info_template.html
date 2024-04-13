@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles/anime-info.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/footer.css">
 
 
 </head>
@@ -59,18 +60,18 @@
             <div class="add-to-my-list">
               Add to Favorites
             </div>
-            <div class="social-media-profiles">
-              <button class="social-media-button">
-                <img class="social-media-photo" src="img/footer/facebook.png">
+            <div class="social-media-profiles1">
+              <button class="social-media-button1">
+                <img class="social-media-photo1" src="img/footer/facebook.png">
               </button>
-              <button class="social-media-button">
-                <img class="social-media-photo" src="img/footer/instagram.png">
+              <button class="social-media-button1">
+                <img class="social-media-photo1" src="img/footer/instagram.png">
               </button>
-              <button class="social-media-button">
-                <img class="social-media-photo" src="img/footer/twitter.png">
+              <button class="social-media-button1">
+                <img class="social-media-photo1" src="img/footer/twitter.png">
               </button>
-              <button class="social-media-button">
-                <img class="social-media-photo" src="img/footer/twitter.png">
+              <button class="social-media-button1">
+                <img class="social-media-photo1" src="img/footer/twitter.png">
               </button>
             </div>
 
@@ -149,7 +150,7 @@
                   <div class="dropdown">
                     <div class="dropbtn" id="dropdownBtn">Rate</div>
                     <button class="dropdown-btn">&#9660;</button>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content" id="d1">
                       <a href="#" onclick="selectOption('1 Star')">1 Star</a>
                       <a href="#" onclick="selectOption('2 Stars')">2 Stars</a>
                       <a href="#" onclick="selectOption('3 Stars')">3 Stars</a>
@@ -174,7 +175,7 @@
 
                 <section class="synopsis">
                   <section class="synopsis-heading">
-                    Synposis
+                    Synopsis
                   </section>
                   <section class="synopsis-content">
                     Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called
@@ -210,17 +211,76 @@
     </div>
   </div>
 
+  <footer>
+    <div class="footer-container">
+        <div class="column-footer">
+            <div class="title-of-column-footer" style="margin-bottom:50px;">ANIME CLOUD</div>
+            <div class="description-of-column" style="color:grey">Dive deep into comprehensive reviews, character analyses, and episode guides that enrich your viewing experience.</div>
+            <div class="social-media-profiles">
+                <button class="social-media-button">
+                    <img class="social-media-photo" src="img/footer/facebook.png">
+                </button>
+                <button class="social-media-button">
+                    <img class="social-media-photo" src="img/footer/instagram.png">
+                </button>
+                <button class="social-media-button">
+                    <img class="social-media-photo" src="img/footer/twitter.png">
+                </button>
+            </div>
+        </div>
+        <div class="column-footer">
+            <div class="title-of-column-footer">Archive</div>
+            <ul class="opening-hrs-list-container">
+                <li class="opening-hrs-list"><span>Best Anime</span> 2024</li>
+                <li class="opening-hrs-list"><span>Best Anime</span> 2023</li>
+                <li class="opening-hrs-list"><span>Best Anime</span> 2022</li>
+                <li class="opening-hrs-list"><span>Best Anime</span> 2021</li>
+            </ul>
+        </div>
+        <div class="column-footer">
+            <div class="title-of-column-footer">Contact Information</div>
+            <ul class="contact-info-list-container" >
+                <li class="contact-info-list" style="color:grey">Got an issue! contact us:</li>
+                <li class="contact-info-list" style="color:grey">+91 12121 12121</li>
+                <li class="contact-info-list" style="color:grey">info@gmail.com</li>
+            </ul>
+        </div>
+        <div class="column-footer">
+            <div class="title-of-column-footer">
+                Our Partners
+            </div>
+            <ul class="branches-list-container">
+                <li class="branches-list" style="color:grey">We thanks all our partners for supportings us.</li>
+            </ul>
+            <div class="social-media-profiles">
+              <button class="social-media-button">
+                  <img class="social-media-photo" src="img/footer/facebook.png">
+              </button>
+              <button class="social-media-button">
+                  <img class="social-media-photo" src="img/footer/instagram.png">
+              </button>
+              <button class="social-media-button">
+                  <img class="social-media-photo" src="img/footer/twitter.png">
+              </button>
+          </div>
+        </div>
+    </div>
+
+    
+</footer>
+<div class="copyright-footer">Copyright ©2024 All rights reserved</div>
+
   <script>
     function selectOption(option) {
       console.log("hi")
       document.getElementById("dropdownBtn").textContent = option;
-      document.getElementById("dropdownContent").style.display = "none";
+      document.getElementById("d1").style.display = "none";
     }
 
     function selectOption2(option) {
       console.log("hi")
       document.getElementById("dropdownBtn2").textContent = "Season " + option;
-      document.getElementById("dropdownContent").style.display = "none";
+      document.getElementById("dropdown-Content").style.display = "none";
     }
   </script>
 
