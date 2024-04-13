@@ -54,10 +54,14 @@
           <section class="left1">
             <img class="info-image" src="img/anime-info/1.jpg">
 
-            <div class="add-to-my-list">
+            <div onclick="
+            changeColor('add-to-list');
+            " class="add-to-my-list" id="add-to-list">
               Add to My List
             </div>
-            <div class="add-to-my-list">
+            <div onclick="
+            changeColor2('add-to-favorite');
+            " class="add-to-my-list" id="add-to-favorite">
               Add to Favorites
             </div>
             <div class="social-media-profiles1">
@@ -144,31 +148,29 @@
                   </section>
                 </section>
                 <section class="under-score">
-                  <button class="watch-list-button">
+                  <button onclick="changeColor('add-to-list')" class="watch-list-button" id="watch-list-button">
                     Add to Watch List
                   </button>
                   <div class="dropdown">
-                    <div class="dropbtn" id="dropdownBtn">Rate</div>
-                    <button class="dropdown-btn">&#9660;</button>
-                    <div class="dropdown-content" id="d1">
-                      <a href="#" onclick="selectOption('1 Star')">1 Star</a>
-                      <a href="#" onclick="selectOption('2 Stars')">2 Stars</a>
-                      <a href="#" onclick="selectOption('3 Stars')">3 Stars</a>
-                      <a href="#" onclick="selectOption('4 Stars')">4 Stars</a>
-                      <a href="#" onclick="selectOption('5 Stars')">5 Stars</a>
-                    </div>
+                    <select class="dropdown1">
+                      <option>Rate</option>
+                      <option>&#9733</option>
+                      <option>&#9733&#9733</option>
+                      <option>&#9733&#9733&#9733</option>
+                      <option>&#9733&#9733&#9733&#9733</option>
+                      <option>&#9733&#9733&#9733&#9733&#9733</option>
+                    </select>
                   </div>
                   <div class="dropdown">
-                    <div class="dropbtn" id="dropdownBtn2">Season 1</div>
-                    <button class="dropdown-btn">&#9660;</button>
-                    <div class="dropdown-content">
-                      <a href="#" onclick="selectOption2('1')">1 </a>
-                      <a href="#" onclick="selectOption2('2')">2</a>
-                      <a href="#" onclick="selectOption2('3')">3</a>
-                      <a href="#" onclick="selectOption2('4')">4</a>
-                      <a href="#" onclick="selectOption2('5')">5</a>
-                    </div>
+                    <select class="dropdown1">
+                      <option>Season</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
                   </div>
+
 
                 </section>
               </div>
@@ -271,16 +273,30 @@
 <div class="copyright-footer">Copyright ©2024 All rights reserved</div>
 
   <script>
-    function selectOption(option) {
-      console.log("hi")
-      document.getElementById("dropdownBtn").textContent = option;
-      document.getElementById("d1").style.display = "none";
-    }
 
-    function selectOption2(option) {
-      console.log("hi")
-      document.getElementById("dropdownBtn2").textContent = "Season " + option;
-      document.getElementById("dropdown-Content").style.display = "none";
+    function changeColor(element) {
+      var favoriteText = document.getElementById(element);
+      favoriteText.classList.toggle("clicked");
+      const button = document.getElementById("watch-list-button")
+      button.classList.toggle("clicked");
+      if(favoriteText.textContent==="Added to the List"){
+        favoriteText.innerText = "Add to the List";
+        button.innerText = "Add to the List";
+      }
+      else{
+        favoriteText.innerText = "Added to the List";
+        button.innerText = "Added to the List";
+      }
+    }
+    function changeColor2(element) {
+      var favoriteText = document.getElementById(element);
+      favoriteText.classList.toggle("clicked");
+      if(favoriteText.textContent==="Added to the Favorite"){
+        favoriteText.innerText = "Add to the Favorite"
+      }
+      else{
+        favoriteText.innerText = "Added to the Favorite"
+      }
     }
   </script>
 
