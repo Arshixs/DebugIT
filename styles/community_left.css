@@ -44,15 +44,15 @@
 
 .new-heading {
   font-weight: 700;
-  color: blue;
+  color: #c3073f;
   font-size: 20px;
 }
 
 .new-writeup {
-  
+  color: white;
 }
 
 .news-stats{
   font-size: smaller;
-  color: gray;
+  color: #4e4e50;
 }

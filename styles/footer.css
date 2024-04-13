@@ -36,7 +36,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(0, 0, 0);
     color:white;
     height:450px;
     padding-top:100px;

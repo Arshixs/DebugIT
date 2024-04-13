@@ -6,8 +6,10 @@ header {
     justify-content: space-between;
     height: 90px;
     color: white;
-    background-color: rgb(49, 49, 49);
-
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 
 .left {
@@ -20,7 +22,9 @@ header {
 }
 
 .header-left-text {
+    text-decoration: none;
     cursor: pointer;
+    color: white;
 }
 
 .center {
@@ -36,24 +40,32 @@ header {
     padding-left: 15px;
     font-size: 18px;
     flex: 1;
-    border-width: 1px;
+    border: solid;
+    border-color: white;
     border-top-left-radius: 20px ;
     border-bottom-left-radius: 20px ;
 }
 
+.search-box:focus {
+    border: solid;
+    border-color: white;
+}
+
 .search-button {
+
     display: flex;
     flex-direction: row;
     position: relative;
 }
 
 .search {
-    height: 42px;
+    height: 43px;
     width: 64px;
     background-color: white;
     color: white;
     position: relative;
-    border-color: black;
+    border: solid;
+    border-color: white;
     border-width: 1px;
     margin-left: -1px;
     border-top-right-radius: 20px ;

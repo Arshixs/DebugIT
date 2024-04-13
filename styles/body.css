@@ -12,6 +12,13 @@
     margin-bottom: 10px;
     position: relative;
     cursor: pointer;
+
+}
+
+.empty2{
+    height: 90px;
+    width: 100%;
+    background-color: black;
 }
 
 .empty {
