@@ -1,0 +1,122 @@
+
+
+.anime-info{
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  color: white;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.anime-name{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.main-name{
+  font-size: 40px;
+}
+.second-name{
+  font-size: large;
+}
+
+.anime-info .info{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.anime-info .info .left1{
+  padding: 0;
+  text-align: left;
+  border: solid;
+}
+
+.info-image{
+  width: 100%;
+  padding: 0px;
+}
+
+.add-to-my-list{
+  text-align: left;
+  font-size: small;
+  margin-top: 5px;
+}
+
+.instagram-photo,.facebook-photo,.twitter-photo{
+    width:10px;
+}
+
+.social-media-profiles{
+    display:flex;
+    height:35px;
+    width:100%;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social-media-button{
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    background-color:rgb(45, 45, 45);
+    border:none;
+    
+}
+
+.social-media-photo{
+  width:20px;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
+.social-media-button:hover{
+  background-color: rgb(163, 163, 163);
+}
+
+.details1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;  
+}
+
+
+.detailed-info{
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  font-size: small;
+  padding-left: 5px;
+
+}
+
+.information{
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.type{
+  margin-right: 5px;
+  color: gray;
+  font-weight: 700;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.big-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+

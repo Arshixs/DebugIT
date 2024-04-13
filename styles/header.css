@@ -12,6 +12,10 @@ header {
     width: 100%;
 }
 
+.empty2 {
+    height: 90px;
+}
+
 .left {
     display: flex;
     flex-direction: column;
