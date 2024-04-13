@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <style>
+    /* CSS for styling the dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-flex;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #c8c8c8;
+      min-width: 90px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      top: 100%;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: inline-block;
+    }
+
+    /* Optional: Additional styles for better appearance */
+    .dropdown:hover .dropbtn {
+      background-color: #c8c8c8;
+    }
+
+    .dropbtn {
+      background-color: #c8c8c8;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90px;
+      height: 27px;
+      text-wrap: nowrap;
+      text-align: center;
+      padding-left: 5px;
+      border: #000000 solid;
+      margin-right: -2px;
+      border-radius: 2px;
+
+    }
+
+    .dropdown-btn {
+      background-color: #c3073f;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      height: 30px;
+      width: 20px;
+      padding: 0px;
+      border: solid;
+      border-color: #000000;
+      border-radius: 2px;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #c8c8c8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="dropdown">
+    <div class="dropbtn" id="dropdownBtn">Rate</div>
+    <button class="dropdown-btn">&#9660;</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="selectOption('1 Star')">1 Star</a>
+      <a href="#" onclick="selectOption('2 Stars')">2 Stars</a>
+      <a href="#" onclick="selectOption('3 Stars')">3 Stars</a>
+      <a href="#" onclick="selectOption('4 Stars')">4 Stars</a>
+      <a href="#" onclick="selectOption('5 Stars')">5 Stars</a>
+    </div>
+  </div>
+
+  <script>
+    function selectOption(option) {
+      document.getElementById("dropdownBtn").textContent = option;
+      document.getElementById("dropdownContent").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
