@@ -1,7 +1,8 @@
 .container{
   display: flex;
   justify-content: center;
-  margin-bottom: 1000px;
+  margin-bottom: 100px;
+  color: white;
 
 }
 
@@ -12,7 +13,8 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 1095px;
+  position: relative;
 
 }
 
@@ -28,21 +30,27 @@
 
 
 .list-element{
-  width: 100%;
-  border: solid;
   border-color: white;
-  padding: 9px;
-  border-width: 1px;
-  margin-top: -1px;
   display: grid;
-  grid-template-columns: 20px 1fr 5fr;
+  grid-template-columns: 20px 1fr 9fr;
   color: white;
   justify-content: center;
+  top: 80px;
+  margin-left: 117px;
+  border: solid;
+  left: 0;
+  padding-left: 2px;
+  padding-right: 6px;
+
+
 }
 
 .sub-container{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
 }
 
 .num{
@@ -53,10 +61,13 @@
   margin-right: 10px;
 }
 
+.image{
+  width: 140px;
+}
+
 .text-section{
   display: flex;
   flex-direction: column;
-  margin-left: -15px;
 }
 
 .title{
