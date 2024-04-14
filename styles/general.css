@@ -5,3 +5,14 @@ body {
     margin: 0;  
 
 }
+
+a {
+    /* Resetting styles */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    background-color: transparent; /* Remove background color */
+    cursor: pointer; /* Change cursor to pointer */
+    /* Additional styles */
+    /* Add any additional styles you want to apply to all anchor tags */
+  }
+  

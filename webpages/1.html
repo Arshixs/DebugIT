@@ -127,21 +127,19 @@
                     <section class="s1">
                       Score
                     </section>
-                    <section class="s2" id="">
-                      8.54
+                    <section class="s2" id="s2">
                     </section>
-                    <section class="s3">
-                      2,345,355,234 users
+                    <section class="s3" id="s3">
                     </section>
                   </section>
                   <section class="score2">
-                    Ranked<b>#111</b>
+                    Ranked<b id="rank"></b>
                   </section>
                   <section class="score2">
-                    Popularity<b>#1</b>
+                    Popularity<b id="popularity"></b>
                   </section>
                   <section class="score2">
-                    Members<b>3,931,862</b>
+                    Members:<b id="support"></b>
                   </section>
                 </section>
                 <section class="under-score">
@@ -240,7 +238,8 @@
     </div>
 </footer>
 <div class="copyright-footer">Copyright ©2024 All rights reserved</div>
-  <script>
+  
+<script>
     let num=0;
 
 function changeColor(element) {
@@ -293,11 +292,20 @@ function json_extraction(num){
       t9.innerText = list.data[num].node.premiered;
       const t10 = document.getElementById("synopsis")
       t10.innerText = list.data[num].node.synopsis;
+      const t11 = document.getElementById("s2")
+      t11.innerText = list.data[num].node.score;
+      const t12 = document.getElementById("s3")
+      t12.innerText = list.data[num].node.s3;
+      const t13 = document.getElementById("rank")
+      t13.innerText = list.data[num].node.rank;
+      const t14 = document.getElementById("popularity")
+      t14.innerText = list.data[num].node.popularity;
+      const t15 = document.getElementById("support")
+      t15.innerText = list.data[num].node.support;
       
     });
 
 }
-
 json_extraction(num);
   </script>
 </body>

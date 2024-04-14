@@ -1,0 +1,79 @@
+.community-section{
+  display: grid;
+  grid-template-columns: 3fr 1fr ;
+  padding: 10px;
+}
+
+.top-anime-list {
+  padding: 20px;
+  border-width: 2px;
+  border-color: black;
+  margin-left: -1px;
+}
+
+.top-anime-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.anime-name-in-list {
+  margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: medium;
+}
+
+.anime-in-list-info {
+  font-size: small;
+}
+
+.side-list-name {
+  background-color: aliceblue;
+  margin-bottom: 0px;
+  border: solid;
+  
+}
+
+
+.side-main-list {
+  display: grid;
+  grid-template-columns: 20px 1fr 40px;
+  align-items: start;
+  justify-content:center;
+  text-align:center;
+  border: solid;
+  margin-top: -1px;
+  padding: 5px;
+  height: 80px;
+}
+
+.series-num {
+  padding: 1px;
+}
+
+.content-list{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.content-list-text {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.add-button {
+  height: 18px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  padding: 2px;
+}
+
+.top-airing-img {
+  height: 80px;
+}
+
+
