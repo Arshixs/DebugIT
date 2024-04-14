@@ -272,6 +272,7 @@ function json_extraction(num){
   fetch('debugit-4f72d-default-rtdb-export.json')
     .then(result => result.json())
     .then(list => {
+      console.log(list.data);
       const t1 = document.getElementById("main-name")
       t1.innerText = list.data[num].node.title;
       const t2 = document.getElementById("second-name")
