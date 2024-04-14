@@ -1,248 +1,170 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Anime List</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/community.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/anime-list.css">
+
   </head>
   <body>
+    <header>
+        <section class="left">
+            <a class="header-left-text" href="http://127.0.0.1:5500/main.html"><h1 class="header-left-text">ANIME CLOUD</h1></a>
+        </section>        
+        <section class="center">
+            <input class="search-box" type="text" placeholder="Search">
+            <section class="search-button">
+                <button class="search"></button>
+                <img src="img/header/search4.svg" class="search-img">
+            </section>
+        </section>
+        <section class="right">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/main.html">Home</a></li>
+                <li><a href="#">Anime List</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </section>
+    </header>
 
-    <section class="top-anime-list">
-      <section class="side-list-name" id="1">
-          <h2>Top airing Anime</h2>
-      </section>
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_airing/1.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">One Piece</h2>
-                  <section class="anime-in-list-info">
-                      TV, 0 eps, scored 8.72<br>
-                      2,343,370 members
-                  </section>
+    <div class="empty2">
 
-              </section>
+    </div>
 
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
 
-          </section>
-      </section>
+    <div class="container">
+        <section class="body-section">
+            <div class="heading">Anime List</div>
+            <div class="sub-container" data-user-cards-container>
+                <template class="list-element" data-user-template>
+                    <div class="num" id="num">
+                        
+                    </div>
+                    <div class="image" id ="image">
+                        <img id="img" style="height:200px;">
+                    </div>
+                    <div class="text-section">
+                        <div class="title" id="title">
+                            
+                        </div>
+                        <div class="details" id="details">
+                            <div class="detail-heading">
+                                
+                            </div>
+                            <div class="detail-content">
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Type:</b><div style="display: inline-block;" id="type"></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Tags:</b><div style="display: inline-block;" id="tags"></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Episords:</b><div style="display: inline-block;" id="episords"></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Season:</b><div style="display: inline-block;" id="season"></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Year:</b><div style="display: inline-block;" id="year"></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">For more details:</b><div style="display: inline-block;" id="more-details"></div>
+                                </div>
 
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_airing/2.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">Hibike! Euphonium 3</h2>
-                  <section class="anime-in-list-info">
-                      TV, 13 eps, scored 8.56<br>
-                      46,668 members
-                  </section>
+                            </div>
+                        </div>
 
-              </section>
+                    </div>
+                </template>
+            </div>
+        </section>
 
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
+    </div>
 
-          </section>
-      </section>
 
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_airing/3.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">Kono Subarashii Sekai ni Shukufuku wo! 3</h2>
-                  <section class="anime-in-list-info">
-                      TV, 11 eps, scored 8.55<br>
-                      299,984 members
-                  </section>
 
-              </section>
 
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
 
-          </section>
-      </section>
 
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_airing/4.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">Yuru Camp△ Season 3</h2>
-                  <section class="anime-in-list-info">
-                      TV, 12 eps, scored 8.47<br>
-                      58,819 members
-                  </section>
 
-              </section>
 
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
 
-          </section>
-      </section>
 
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_airing/5.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">Tensei shitara Slime Datta Ken 3rd Season</h2>
-                  <section class="anime-in-list-info">
-                      TV, 24 eps, scored 8.44<br>
-                      229,985 members
-                  </section>
+    <footer>
+        <div class="footer-container">
+            <div class="column-footer">
+                <div class="title-of-column-footer" style="margin-bottom:50px;">ANIME CLOUD</div>
+                <div class="description-of-column" style="color:grey">Dive deep into comprehensive reviews, character analyses, and episode guides that enrich your viewing experience.</div>
+                <div class="social-media-profiles">
+                    <button class="social-media-button">
+                        <img class="social-media-photo" src="img/footer/facebook.png">
+                    </button>
+                    <button class="social-media-button">
+                        <img class="social-media-photo" src="img/footer/instagram.png">
+                    </button>
+                    <button class="social-media-button">
+                        <img class="social-media-photo" src="img/footer/twitter.png">
+                    </button>
+                </div>
+            </div>
+            <div class="column-footer">
+                <div class="title-of-column-footer">Archive</div>
+                <ul class="opening-hrs-list-container">
+                    <li class="opening-hrs-list"><span>Best Anime</span> 2024</li>
+                    <li class="opening-hrs-list"><span>Best Anime</span> 2023</li>
+                    <li class="opening-hrs-list"><span>Best Anime</span> 2022</li>
+                    <li class="opening-hrs-list"><span>Best Anime</span> 2021</li>
+                    
+  
+                </ul>
+            </div>
+            <div class="column-footer">
+                <div class="title-of-column-footer">Contact Information</div>
+                <ul class="contact-info-list-container" >
+                    <li class="contact-info-list" style="color:grey">Got an issue! contact us:</li>
+                    <li class="contact-info-list" style="color:grey">+91 12121 12121</li>
+                    <li class="contact-info-list" style="color:grey">info@gmail.com</li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <div class="title-of-column-footer">
+                    Our Partners
+                </div>
+                <ul class="branches-list-container">
+                    <li class="branches-list" style="color:grey">We thanks all our partners for supportings us.</li>
+                </ul>
+                <div class="social-media-profiles">
+                  <button class="social-media-button">
+                      <img class="social-media-photo" src="img/footer/facebook.png">
+                  </button>
+                  <button class="social-media-button">
+                      <img class="social-media-photo" src="img/footer/instagram.png">
+                  </button>
+                  <button class="social-media-button">
+                      <img class="social-media-photo" src="img/footer/twitter.png">
+                  </button>
+              </div>
+            </div>
+        </div>
+  
+        
+    </footer>
+    <div class="copyright-footer">Copyright ©2024 All rights reserved</div>
 
-              </section>
 
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
 
-          </section>
-      </section>
-      <br>
 
-      <section class="side-list-name">
-          <h2>Top Upcoming Anime</h2>
-      </section>
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_upcoming/1.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">Kimetsu no Yaiba: Hashira Geiko-hen</h2>
-                  <section class="anime-in-list-info">
-                      TV, 0 eps, scored N/A<br>
-                      250,262 members
-                  </section>
 
-              </section>
 
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
 
-          </section>
-      </section>
 
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_upcoming/2.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">One Punch Man 3</h2>
-                  <section class="anime-in-list-info">
-                      TV, 0 eps, scored N/A<br>
-                      206,928 members
-                  </section>
 
-              </section>
-
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
-
-          </section>
-      </section>
-
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_upcoming/3.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">Boku no Hero Academia 7th Season</h2>
-                  <section class="anime-in-list-info">
-                      TV, 0 eps, scored N/A<br>
-                      180,136 members
-                  </section>
-
-              </section>
-
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
-
-          </section>
-      </section>
-
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_upcoming/4.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">"Oshi no Ko" Season 2</h2>
-                  <section class="anime-in-list-info">
-                      TV, 0 eps, scored N/A<br>
-                      170,798 members
-                  </section>
-
-              </section>
-
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
-
-          </section>
-      </section>
-
-      <section class="side-main-list">
-          <section class="series-num">1</section>
-          <section class="content-list">
-              <img class="top-airing-img" src="img/community_list/top_upcoming/5.webp">
-              <section class="content-list-text">
-                  <h2 class="anime-name-in-list">Youjo Senki II</h2>
-                  <section class="anime-in-list-info">
-                      TV, 0 eps, scored N/A<br>
-                      142,917 members
-                  </section>
-
-              </section>
-
-          </section>
-          <section>
-              <button class="add-button">
-                  add
-              </button>
-
-          </section>
-      </section>
-  </section>
-    <script src="js/anime-list.js">
-
-    </script>  
-    
   </body>
 </html>
