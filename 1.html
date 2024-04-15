@@ -303,6 +303,8 @@ function json_extraction(num){
       t14.innerText = list.data[num].node.popularity;
       const t15 = document.getElementById("support")
       t15.innerText = list.data[num].node.support;
+      const t16 = document.getElementById("img")
+      t16.src = "img/anime-info/"+ (num+1) +".jpg";
       
     });
 
