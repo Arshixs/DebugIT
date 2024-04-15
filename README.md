@@ -28,6 +28,8 @@ Anime cloud is an Anime exploration hub where the user can discover a vasr colle
 
 
 ## Video Demonstration
+## Video Demonstration
+[Video](https://youtu.be/pLMVDAxnr0A)
 
 ## Deployment link 
 [Website](https://anime-cloud.netlify.app/)
