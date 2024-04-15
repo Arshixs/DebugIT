@@ -50,7 +50,7 @@
         </section>
         <section class="info">
           <section class="left1">
-            <img class="info-image" src="img/anime-info/1.jpg">
+            <img src="img/thumbnail/1/thumbnail8.jpg" class="info-image" id="img">
             <div onclick="
             changeColor('add-to-list');
             " class="add-to-my-list" id="add-to-list">
@@ -127,21 +127,19 @@
                     <section class="s1">
                       Score
                     </section>
-                    <section class="s2" id="">
-                      8.54
+                    <section class="s2" id="s2">
                     </section>
-                    <section class="s3">
-                      2,345,355,234 users
+                    <section class="s3" id="s3">
                     </section>
                   </section>
                   <section class="score2">
-                    Ranked<b>#111</b>
+                    Ranked<b id="rank"></b>
                   </section>
                   <section class="score2">
-                    Popularity<b>#1</b>
+                    Popularity<b id="popularity"></b>
                   </section>
                   <section class="score2">
-                    Members<b>3,931,862</b>
+                    Members:<b id="support"></b>
                   </section>
                 </section>
                 <section class="under-score">
@@ -240,13 +238,9 @@
     </div>
 </footer>
 <div class="copyright-footer">Copyright ©2024 All rights reserved</div>
-  <script>
-    // Get the URL of the current page
-var currentPageUrl = window.location.href;
-
-// Print the URL
-console.log("Current Page URL:", currentPageUrl);
-    let num=0;
+  
+<script>
+    let num=22;
 
 function changeColor(element) {
   var favoriteText = document.getElementById(element);
@@ -278,7 +272,6 @@ function json_extraction(num){
   fetch('debugit-4f72d-default-rtdb-export.json')
     .then(result => result.json())
     .then(list => {
-      console.log(list.data);
       const t1 = document.getElementById("main-name")
       t1.innerText = list.data[num].node.title;
       const t2 = document.getElementById("second-name")
@@ -299,11 +292,22 @@ function json_extraction(num){
       t9.innerText = list.data[num].node.premiered;
       const t10 = document.getElementById("synopsis")
       t10.innerText = list.data[num].node.synopsis;
+      const t11 = document.getElementById("s2")
+      t11.innerText = list.data[num].node.score;
+      const t12 = document.getElementById("s3")
+      t12.innerText = list.data[num].node.s3;
+      const t13 = document.getElementById("rank")
+      t13.innerText = list.data[num].node.rank;
+      const t14 = document.getElementById("popularity")
+      t14.innerText = list.data[num].node.popularity;
+      const t15 = document.getElementById("support")
+      t15.innerText = list.data[num].node.support;
+      const t16 = document.getElementById("img")
+      t16.src = "img/anime-info/"+ (num+1) +".jpg";
       
     });
 
 }
-
 json_extraction(num);
   </script>
 </body>

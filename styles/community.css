@@ -27,13 +27,16 @@
 
 .anime-in-list-info {
   font-size: small;
+  color: white;
+  height: 80px;
 }
 
 .side-list-name {
-  background-color: aliceblue;
   margin-bottom: 0px;
   border: solid;
-  
+  border-color: white;
+  color: white;
+  padding: 10px;
 }
 
 
@@ -47,6 +50,8 @@
   margin-top: -1px;
   padding: 5px;
   height: 80px;
+  border-color: white;
+  vertical-align: middle;
 }
 
 .series-num {
@@ -76,5 +81,7 @@
 .top-airing-img {
   height: 80px;
 }
+
+
 
 
