@@ -29,7 +29,7 @@
                 <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
                 <li><a href="#">Anime List</a></li>
                 <li><a href="#">Genres</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="http://127.0.0.1:5500/About.html">About</a></li>
             </ul>
         </section>
     </header>
@@ -75,7 +75,7 @@
                                     <b class="general-detail">Year:</b><div style="display: inline-block;" data-year></div>
                                 </div>
                                 <div style="margin-bottom:5px;">
-                                    <b class="general-detail">For more details:</b><div style="display: inline-block;" data-more-details></div>
+                                    <b class="general-detail">For more details:</b><a style="display: inline-block;" data-more-details>Click here</a>
                                 </div>
 
                             </div>
@@ -184,7 +184,7 @@
                 const year = card.querySelector("[data-year]")
                 const more = card.querySelector("[data-more-details]")
                 header.textContent = data['data'][i].title;
-                more.textContent = data['data'][i].sources;
+                more.href = data['data'][i].sources[0]
                 type.textContent = data['data'][i].type;
                 year.textContent = data['data'][i].animeSeason.year;
                 body.textContent = data['data'][i].episodes;

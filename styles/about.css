@@ -1,5 +1,40 @@
-.about{
-  display: grid;
-  grid-template-columns: 100px 1fr;
+.container-about{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
+}
+
+.about{
+  display: flex;
+  width: 60%;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.a1{
+  font-size: 40px;
+  background-color: #c3073f;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.about-content{
+  padding: 15px;
+  border: solid;
+  border-color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.heading-about-us{
+  background-color: #c3073f; height: 89px;margin-top: 20px; font-size: 40px; display: flex;align-items: center;
+  border: solid;
+  border-color: white;
+  padding-left: 10px;
 }
