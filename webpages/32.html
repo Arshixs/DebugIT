@@ -272,6 +272,7 @@ function json_extraction(num){
   fetch('debugit-4f72d-default-rtdb-export.json')
     .then(result => result.json())
     .then(list => {
+      console.log(list.data[num].node);
       const t1 = document.getElementById("main-name")
       t1.innerText = list.data[num].node.title;
       const t2 = document.getElementById("second-name")
@@ -303,7 +304,7 @@ function json_extraction(num){
       const t15 = document.getElementById("support")
       t15.innerText = list.data[num].node.support;
       const t16 = document.getElementById("img")
-      t16.src = "img/anime-info/"+ (num+1) +".jpg";
+      t16.src = "img/thumbnail/4/2.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRhOTE2MDQzLWM0NmItNDYyNC05NWVmLTlhMmYyMjNmYmZmMi5wbmc=";
       
     });
 
