@@ -15,10 +15,10 @@
   <body>
     <header>
         <section class="left">
-            <a class="header-left-text" href="http://127.0.0.1:5500/index.html"><h1 class="header-left-text">ANIME CLOUD</h1></a>
+            <a class="header-left-text" href="/index.html"><h1 class="header-left-text">ANIME CLOUD</h1></a>
         </section>        
         <section class="center">
-            <input class="search-box" type="text" placeholder="Search">
+            <input class="search-box" type="text" placeholder="Search" data-search>
             <section class="search-button">
                 <button class="search"></button>
                 <img src="img/header/search4.svg" class="search-img">
@@ -26,10 +26,10 @@
         </section>
         <section class="right">
             <ul>
-                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="#">Anime List</a></li>
                 <li><a href="#">Genres</a></li>
-                <li><a href="http://127.0.0.1:5500/About.html">About</a></li>
+                <li><a href="/About.html">About</a></li>
             </ul>
         </section>
     </header>
@@ -42,8 +42,8 @@
     <div class="container">
         <section class="body-section">
             <div class="heading">Anime List</div>
-            <div class="sub-container" data-user-cards-container>
-                <template class="list-element" data-user-template>
+            <div class="list-element" data-user-cards-container></div>
+                <template  data-user-template>
                     <div class="num" data-num>
                         
                     </div>
@@ -83,7 +83,7 @@
 
                     </div>
                 </template>
-            </div>
+            
         </section>
 
     </div>
@@ -163,13 +163,14 @@
     <script>
         const userCardTemplate = document.querySelector("[data-user-template]")
         const userCardContainer = document.querySelector("[data-user-cards-container]")
-    
-    
-    
+        const searchInput = document.querySelector("[data-search]")
+
+        let users = []
         fetch("anime-offline-database.json")
           .then(res => res.json())
           .then(data => {
             console.log(data['data'][0]["title"]);
+            
             for(i=0;i<100;i++){
                 console.log(i);
                 const card = userCardTemplate.content.cloneNode(true);
@@ -193,9 +194,22 @@
                 num.textContent = `${i+1}`;
                 image.src = data['data'][i].picture;
                 console.log(card);
-                userCardTemplate.append(card);
+                userCardContainer.append(card);
+                users.push({name: data['data'][i].title, tags: data['data'][i].tags, element: card.children[0] });
               }
           })
+        console.log(users);
+
+        searchInput.addEventListener("input", e => {
+            const value = e.target.value.toLowerCase()
+            users.forEach(user =>{
+                const isVisible = user.name.toLowerCase().includes(value);
+                user['element'].classList.toggle("hide", !isVisible);
+            })
+          })
+    
+    
+    
      
     </script>
 

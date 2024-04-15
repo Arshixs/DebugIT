@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Title</title>
+  <link rel="stylesheet" href="styles/anime-info.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+
+<body>
+  <header>
+    <section class="left">
+      <a class="header-left-text" href="/index.html">
+        <h1 class="header-left-text">ANIME CLOUD</h1>
+      </a>
+    </section>
+    <section class="center">
+      <input class="search-box" type="text" placeholder="Search">
+      <section class="search-button">
+        <button class="search"></button>
+        <img src="img/header/search4.svg" class="search-img">
+      </section>
+    </section>
+    <section class="right">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Anime List</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="/About.html">About</a></li>      </ul>
+    </section>
+  </header>
+
+  <div class="empty2">
+
+  </div>
+
+  <div class="big-container">
+    <div class="container">
+      <section class="anime-info">
+        <section class="anime-name">
+          <section class="main-name" id="main-name">
+          </section>
+          <section class="second-name" id="second-name">
+          </section>
+        </section>
+        <section class="info">
+          <section class="left1">
+            <img src="img/thumbnail/1/thumbnail8.jpg" class="info-image" id="img">
+            <div onclick="
+            changeColor('add-to-list');
+            " class="add-to-my-list" id="add-to-list">
+              Add to My List
+            </div>
+            <div onclick="
+            changeColor2('add-to-favorite');
+            " class="add-to-my-list" id="add-to-favorite">
+              Add to Favorites
+            </div>
+            <div class="social-media-profiles1">
+              <button class="social-media-button1">
+                <img class="social-media-photo1" src="img/footer/facebook.png">
+              </button>
+              <button class="social-media-button1">
+                <img class="social-media-photo1" src="img/footer/instagram.png">
+              </button>
+              <button class="social-media-button1">
+                <img class="social-media-photo1" src="img/footer/twitter.png">
+              </button>
+              <button class="social-media-button1">
+                <img class="social-media-photo1" src="img/footer/twitter.png">
+              </button>
+            </div>
+
+            <div class="details1-container">
+
+              <section class="details1">
+                <h6 style="margin-top:20px; margin-bottom:10px">Details</h6>
+
+                <div class="detailed-info">
+                  <div class="information">
+                    <div class="type">Type: </div>
+                    <div class="type-namw" id="type"></div>
+                  </div>
+                  <div class="information">
+                    <div class="type">Studios: </div>
+                    <div class="type-namw" id="Studio"></div>
+                  </div>
+                  <div class="information">
+                    <div class="type">Date aired: </div>
+                    <div class="type-namw" id="date"></div>
+                  </div>
+                  <div class="information">
+                    <div class="type">Status: </div>
+                    <div class="type-namw" id="status"></div>
+                  </div>
+                  <div class="information">
+                    <div class="type" >Genres</div>
+                    <div class="type-namw" id="genres"></div>
+                  </div>
+                  <div class="information">
+                    <div class="type">Scores </div>
+                    <div class="type-namw" id="score"></div>
+                  </div>
+                  <div class="information">
+                    <div class="type">Premiered </div>
+                    <div class="type-namw" id="premiered"></div>
+                  </div>
+                </div>
+              </section>
+
+
+            </div>
+
+          </section>
+
+          <section class="details2">
+            <section class="rating">
+              <div class="ranking-container">
+              <section class="ranking">
+                <section class="ranking-subsection">
+                  <section class="score1">
+                    <section class="s1">
+                      Score
+                    </section>
+                    <section class="s2" id="s2">
+                    </section>
+                    <section class="s3" id="s3">
+                    </section>
+                  </section>
+                  <section class="score2">
+                    Ranked<b id="rank"></b>
+                  </section>
+                  <section class="score2">
+                    Popularity<b id="popularity"></b>
+                  </section>
+                  <section class="score2">
+                    Members:<b id="support"></b>
+                  </section>
+                </section>
+                <section class="under-score">
+                  <button onclick="changeColor('add-to-list')" class="watch-list-button" id="watch-list-button">
+                    Add to Watch List
+                  </button>
+                  <div class="dropdown">
+                    <select class="dropdown1">
+                      <option>Rate</option>
+                      <option>&#9733</option>
+                      <option>&#9733&#9733</option>
+                      <option>&#9733&#9733&#9733</option>
+                      <option>&#9733&#9733&#9733&#9733</option>
+                      <option>&#9733&#9733&#9733&#9733&#9733</option>
+                    </select>
+                  </div>
+                  <div class="dropdown">
+                    <select class="dropdown1">
+                      <option>Season</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                </section>
+              </div>
+                <section class="synopsis">
+                  <section class="synopsis-heading">
+                    Synopsis
+                  </section>
+                  <section class="synopsis-content" id="synopsis">
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+        <div class="column-footer">
+            <div class="title-of-column-footer" style="margin-bottom:50px;">ANIME CLOUD</div>
+            <div class="description-of-column" style="color:grey">Dive deep into comprehensive reviews, character analyses, and episode guides that enrich your viewing experience.</div>
+            <div class="social-media-profiles">
+                <button class="social-media-button">
+                    <img class="social-media-photo" src="img/footer/facebook.png">
+                </button>
+                <button class="social-media-button">
+                    <img class="social-media-photo" src="img/footer/instagram.png">
+                </button>
+                <button class="social-media-button">
+                    <img class="social-media-photo" src="img/footer/twitter.png">
+                </button>
+            </div>
+        </div>
+        <div class="column-footer">
+            <div class="title-of-column-footer">Archive</div>
+            <ul class="opening-hrs-list-container">
+                <li class="opening-hrs-list"><span>Best Anime</span> 2024</li>
+                <li class="opening-hrs-list"><span>Best Anime</span> 2023</li>
+                <li class="opening-hrs-list"><span>Best Anime</span> 2022</li>
+                <li class="opening-hrs-list"><span>Best Anime</span> 2021</li>
+            </ul>
+        </div>
+        <div class="column-footer">
+            <div class="title-of-column-footer">Contact Information</div>
+            <ul class="contact-info-list-container" >
+                <li class="contact-info-list" style="color:grey">Got an issue! contact us:</li>
+                <li class="contact-info-list" style="color:grey">+91 12121 12121</li>
+                <li class="contact-info-list" style="color:grey">info@gmail.com</li>
+            </ul>
+        </div>
+        <div class="column-footer">
+            <div class="title-of-column-footer">
+                Our Partners
+            </div>
+            <ul class="branches-list-container">
+                <li class="branches-list" style="color:grey">We thanks all our partners for supportings us.</li>
+            </ul>
+            <div class="social-media-profiles">
+              <button class="social-media-button">
+                  <img class="social-media-photo" src="img/footer/facebook.png">
+              </button>
+              <button class="social-media-button">
+                  <img class="social-media-photo" src="img/footer/instagram.png">
+              </button>
+              <button class="social-media-button">
+                  <img class="social-media-photo" src="img/footer/twitter.png">
+              </button>
+          </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright-footer">Copyright ©2024 All rights reserved</div>
+  
+<script>
+    let num=34;
+
+function changeColor(element) {
+  var favoriteText = document.getElementById(element);
+  favoriteText.classList.toggle("clicked");
+  const button = document.getElementById("watch-list-button")
+  button.classList.toggle("clicked");
+  if(favoriteText.textContent==="Added to the List"){
+    favoriteText.innerText = "Add to the List";
+    button.innerText = "Add to the List";
+  }
+  else{
+    favoriteText.innerText = "Added to the List";
+    button.innerText = "Added to the List";
+  }
+}
+function changeColor2(element) {
+  var favoriteText = document.getElementById(element);
+  favoriteText.classList.toggle("clicked");
+  if(favoriteText.textContent==="Added to the Favorite"){
+    favoriteText.innerText = "Add to the Favorite"
+  }
+  else{
+    favoriteText.innerText = "Added to the Favorite"
+  }
+}
+
+
+function json_extraction(num){
+  fetch('debugit-4f72d-default-rtdb-export.json')
+    .then(result => result.json())
+    .then(list => {
+      const t1 = document.getElementById("main-name")
+      t1.innerText = list.data[num].node.title;
+      const t2 = document.getElementById("second-name")
+      t2.innerText = list.data[num].node.title2;
+      const t3 = document.getElementById("type")
+      t3.innerText = list.data[num].node.type;
+      const t4 = document.getElementById("Studio")
+      t4.innerText = list.data[num].node.studio;
+      const t5 = document.getElementById("date")
+      t5.innerText = list.data[num].node.date;
+      const t6 = document.getElementById("status")
+      t6.innerText = list.data[num].node.status;
+      const t7 = document.getElementById("genres")
+      t7.innerText = list.data[num].node.genres;
+      const t8 = document.getElementById("score")
+      t8.innerText = list.data[num].node.score;
+      const t9 = document.getElementById("premiered")
+      t9.innerText = list.data[num].node.premiered;
+      const t10 = document.getElementById("synopsis")
+      t10.innerText = list.data[num].node.synopsis;
+      const t11 = document.getElementById("s2")
+      t11.innerText = list.data[num].node.score;
+      const t12 = document.getElementById("s3")
+      t12.innerText = list.data[num].node.s3;
+      const t13 = document.getElementById("rank")
+      t13.innerText = list.data[num].node.rank;
+      const t14 = document.getElementById("popularity")
+      t14.innerText = list.data[num].node.popularity;
+      const t15 = document.getElementById("support")
+      t15.innerText = list.data[num].node.support;
+      const t16 = document.getElementById("img")
+      t16.src = "/img/thumbnail/4/8.jpg";
+      
+    });
+
+}
+json_extraction(num);
+  </script>
+</body>
+
+</html>
