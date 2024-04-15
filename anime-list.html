@@ -1,51 +1,211 @@
-<!-- anime_info_template.html -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Info</title>
-</head>
-<body>
-    <div id="content">
-        <!-- Your content will be dynamically replaced here -->
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/anime-list.css">
+
+  </head>
+  <body>
+    <header>
+        <section class="left">
+            <a class="header-left-text" href="http://127.0.0.1:5500/main.html"><h1 class="header-left-text">ANIME CLOUD</h1></a>
+        </section>        
+        <section class="center">
+            <input class="search-box" type="text" placeholder="Search">
+            <section class="search-button">
+                <button class="search"></button>
+                <img src="img/header/search4.svg" class="search-img">
+            </section>
+        </section>
+        <section class="right">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/main.html">Home</a></li>
+                <li><a href="#">Anime List</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <div class="empty2">
+
     </div>
 
+
+    <div class="container">
+        <section class="body-section">
+            <div class="heading">Anime List</div>
+            <div class="sub-container" data-user-cards-container>
+                <template class="list-element" data-user-template>
+                    <div class="num" data-num>
+                        
+                    </div>
+                    <div class="image" id ="image">
+                        <img data-image style="height:200px; width:133px;">
+                    </div>
+                    <div class="text-section">
+                        <div class="title" data-header>
+                            
+                        </div>
+                        <div class="details" id="details">
+                            <div class="detail-heading">
+                                Details
+                            </div>
+                            <div class="detail-content">
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Type:</b><div style="display: inline-block;" data-type></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Tags:</b><div style="display: inline-block;" data-tags></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Episords:</b><div style="display: inline-block;" data-body></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Season:</b><div style="display: inline-block;" data-season></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">Year:</b><div style="display: inline-block;" data-year></div>
+                                </div>
+                                <div style="margin-bottom:5px;">
+                                    <b class="general-detail">For more details:</b><div style="display: inline-block;" data-more-details></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </template>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="column-footer">
+                <div class="title-of-column-footer" style="margin-bottom:50px;">ANIME CLOUD</div>
+                <div class="description-of-column" style="color:grey">Dive deep into comprehensive reviews, character analyses, and episode guides that enrich your viewing experience.</div>
+                <div class="social-media-profiles">
+                    <button class="social-media-button">
+                        <img class="social-media-photo" src="img/footer/facebook.png">
+                    </button>
+                    <button class="social-media-button">
+                        <img class="social-media-photo" src="img/footer/instagram.png">
+                    </button>
+                    <button class="social-media-button">
+                        <img class="social-media-photo" src="img/footer/twitter.png">
+                    </button>
+                </div>
+            </div>
+            <div class="column-footer">
+                <div class="title-of-column-footer">Archive</div>
+                <ul class="opening-hrs-list-container">
+                    <li class="opening-hrs-list"><span>Best Anime</span> 2024</li>
+                    <li class="opening-hrs-list"><span>Best Anime</span> 2023</li>
+                    <li class="opening-hrs-list"><span>Best Anime</span> 2022</li>
+                    <li class="opening-hrs-list"><span>Best Anime</span> 2021</li>
+                    
+  
+                </ul>
+            </div>
+            <div class="column-footer">
+                <div class="title-of-column-footer">Contact Information</div>
+                <ul class="contact-info-list-container" >
+                    <li class="contact-info-list" style="color:grey">Got an issue! contact us:</li>
+                    <li class="contact-info-list" style="color:grey">+91 12121 12121</li>
+                    <li class="contact-info-list" style="color:grey">info@gmail.com</li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <div class="title-of-column-footer">
+                    Our Partners
+                </div>
+                <ul class="branches-list-container">
+                    <li class="branches-list" style="color:grey">We thanks all our partners for supportings us.</li>
+                </ul>
+                <div class="social-media-profiles">
+                  <button class="social-media-button">
+                      <img class="social-media-photo" src="img/footer/facebook.png">
+                  </button>
+                  <button class="social-media-button">
+                      <img class="social-media-photo" src="img/footer/instagram.png">
+                  </button>
+                  <button class="social-media-button">
+                      <img class="social-media-photo" src="img/footer/twitter.png">
+                  </button>
+              </div>
+            </div>
+        </div>
+  
+        
+    </footer>
+    <div class="copyright-footer">Copyright ©2024 All rights reserved</div>
+
+
+
     <script>
-        // Function to handle routing
-        function handleRoute() {
-            // Get the path from the URL
-            var path = window.location.pathname;
-
-            // Extract the anime name from the path
-            var parts = path.split('/');
-            var animeName = parts[parts.length - 1];
-
-            // Fetch data or perform actions based on the anime name
-            console.log("Anime Name:", animeName);
-
-            // Example: Load content based on the anime name
-            fetchAnimeInfo(animeName);
-        }
-
-        // Function to fetch anime info (replace with your implementation)
-        function fetchAnimeInfo(animeName) {
-            // Example: Fetch anime info from an API
-            fetch('/api/anime/' + animeName)
-                .then(response => response.json())
-                .then(data => {
-                    // Display anime info on the page
-                    document.getElementById('content').innerHTML = JSON.stringify(data);
-                })
-                .catch(error => console.error('Error fetching anime info:', error));
-        }
-
-        // Initial route handling when the page loads
-        handleRoute();
-
-        // Listen for navigation events (e.g., when the URL changes)
-        window.addEventListener('popstate', handleRoute);
+        const userCardTemplate = document.querySelector("[data-user-template]")
+        const userCardContainer = document.querySelector("[data-user-cards-container]")
+    
+    
+    
+        fetch("anime-offline-database.json")
+          .then(res => res.json())
+          .then(data => {
+            console.log(data['data'][0]["title"]);
+            for(i=0;i<100;i++){
+                console.log(i);
+                const card = userCardTemplate.content.cloneNode(true);
+                console.log(card);
+                const tags= card.querySelector("[data-tags]")
+                const type= card.querySelector("[data-type]")
+                const season= card.querySelector("[data-season]")
+                const num = card.querySelector("[data-num]")
+                const header = card.querySelector("[data-header]")
+                const body = card.querySelector("[data-body]")
+                const image = card.querySelector("[data-image]")
+                const year = card.querySelector("[data-year]")
+                const more = card.querySelector("[data-more-details]")
+                header.textContent = data['data'][i].title;
+                more.textContent = data['data'][i].sources;
+                type.textContent = data['data'][i].type;
+                year.textContent = data['data'][i].animeSeason.year;
+                body.textContent = data['data'][i].episodes;
+                season.textContent = data['data'][i].animeSeason.season;
+                tags.textContent = data['data'][i].tags;
+                num.textContent = `${i+1}`;
+                image.src = data['data'][i].picture;
+                console.log(card);
+                userCardTemplate.append(card);
+              }
+          })
+     
     </script>
-</body>
+
+
+
+
+
+
+
+
+
+  </body>
 </html>
